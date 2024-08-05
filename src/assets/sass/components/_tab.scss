@@ -1,0 +1,25 @@
+
+
+.custom-tabs{
+    border-color: hsl(var(--base));
+    width: 100%;
+    padding: 12px 0px;
+    border-radius: 12px;
+     li{
+        margin: 0px 8px 8px 0px;
+        .btn-check:active+.btn, .btn-check:checked+.btn, .btn.active, .btn.show, .btn:active {
+            color: hsl(var(--white)) !important;
+            background: hsl(var(--base)) !important;
+        }
+        .btn--base.outline-2:hover, .btn--base.outline-2:focus {
+            background-color: hsl(var(--base-two)/0.5);
+            color: hsl(var(--black));
+        }
+        .btn-check:active+.btn, .btn-check:checked+.btn, .btn.active, .btn.show, .btn:active:hover {
+            color: hsl(var(--white));
+            background: hsl(var(--white));
+        }
+     }
+ }
+
+

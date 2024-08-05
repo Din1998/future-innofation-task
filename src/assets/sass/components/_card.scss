@@ -1,0 +1,109 @@
+
+// base card
+.product--card {
+
+  &:hover{
+    .content--wrap{
+      .title{
+        color: hsl(var(--base)) !important;
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .thumb--wrap{
+    width: 100%;
+    height: 458px;
+    border-radius: 10px 10px 0px 0px;
+    overflow: hidden;
+    position: relative;
+
+  }
+
+
+  .content--wrap{
+    height: 230px;
+    bottom: 0px;
+    padding: 0px 0px 42px 38px;
+    background: linear-gradient(177deg, rgba(217, 217, 217, 0.00) 8.94%, rgba(0, 0, 0, 0.80) 97.37%);
+
+
+  }
+
+  .feature--wrap{
+    li{
+      position: relative;
+
+      &::after{
+        content: "";
+        position: absolute;
+        top: 7px;
+        right: -22px;
+        background-color: hsl(var(--white));
+        width: 1px;
+        height: 10px;
+
+      }
+
+
+      &:last-child{
+        &::after{
+          content: none;
+        }
+      }
+    }
+  }
+
+
+
+}
+
+
+
+// testimonial cards
+.testimonial-card {
+  width: 535px !important;
+  border: 1px solid hsl(var(--black)/.1);
+  border-radius: 20px;
+  flex-shrink: 0;
+
+  .item--wrap {
+    padding: 32px !important;
+  }
+
+  .description {
+    line-height: 30px;
+    font-style: italic;
+  }
+
+  .review--quote{
+    top: -10px;
+    right: 45px;
+    font-size: 100px;
+    color: hsl(var(--base));
+    font-style: italic;
+  }
+
+
+
+  .user--thumb {
+    width: 62.338px;
+    height: 58.129px;
+    border-radius: 50%;
+    img{
+      object-fit: contain !important;
+    }
+  }
+
+  .star--wrap{
+    li{
+      i{
+        color: hsl(var(--star-color));
+      }
+    }
+  }
+
+
+
+}
+

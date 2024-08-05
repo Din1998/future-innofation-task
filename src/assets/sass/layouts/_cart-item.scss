@@ -1,0 +1,292 @@
+// add to cart box
+
+.cart-box {
+  background: hsl(var(--white));
+  height: 100vh;
+  width: 450px;
+  position: fixed;
+  right: -600px;
+  z-index: 9999;
+  padding: 60px 40px;
+  top: 0;
+  overflow-y: scroll;
+  transition: all 0.4s ease-in-out;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  .cart-item--wrap {
+    height: 63vh;
+    overflow-y: scroll;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+
+  .close--btn {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    color: hsl(var(--black));
+    font-size: 24px;
+    position: absolute;
+    top: 14px;
+    right: 17px;
+  }
+
+
+
+
+
+  .cart--footer {
+    left: 0;
+    bottom: 0;
+    padding: 20px;
+    background-color: hsl(var(--black)/.1);
+
+  }
+}
+
+.cart--footer2{
+  padding: 20px;
+  background-color: hsl(var(--black)/.1);
+}
+
+
+
+.filter--box {
+  background: hsl(var(--white));
+  height: 100vh;
+  width: 450px;
+  position: fixed;
+  right: -600px;
+  z-index: 9999;
+  padding: 60px 40px;
+  top: 0;
+  overflow-y: scroll;
+  transition: all 0.4s ease-in-out;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  .cart-item--wrap {
+    height: 63vh;
+    overflow-y: scroll;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+
+  .close--btn {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    color: hsl(var(--black));
+    font-size: 24px;
+    position: absolute;
+    top: 14px;
+    right: 17px;
+  }
+
+
+
+
+
+  .cart--footer {
+    left: 0;
+    bottom: 0;
+    padding: 20px;
+    background-color: hsl(var(--black)/.1);
+  }
+}
+
+
+.quantity_box {
+  width: 90px;
+  border-radius: 0px;
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+  margin-top: 0px;
+  border: 1px solid transparent;
+}
+
+.quantity_box input {
+  width: 50px;
+  border-radius: 0px;
+  height: 34px;
+  border: none;
+  -webkit-appearance: textfield;
+  -moz-appearance: textfield;
+  padding-left: 22px;
+  outline: none;
+  font-size: 14px;
+  font-weight: 700;
+  background-color: hsl(var(--black) / 0.05);
+}
+
+.quantity_box button {
+  width: 29px;
+  height: 34px;
+  background-color: transparent;
+  font-size: 8px;
+  background-color: hsl(var(--black) / 0.05);
+  border: none;
+  border-top-right-radius: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  outline: none;
+}
+
+.quantity_box button i {
+  color: hsl(var(--black));
+}
+
+.quantity_box button.sub {
+  bottom: 9px;
+  top: auto;
+  border: none;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+// cart item card
+.cart-item-card {
+  display: flex;
+  align-items: center;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+
+  .thumb {
+    width: 110px;
+    height: 110px;
+    flex-shrink: 0;
+    border: 1px solid hsl(var(--black)/0.2);
+
+    img {
+      border-radius: 4px;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+  }
+
+  .content {
+    margin-left: 20px;
+    width: 200px;
+
+    .title {
+      line-height: 1.5;
+      margin-bottom: 4px;
+    }
+
+    .price {
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 1.4;
+      margin-bottom: 8px;
+
+    }
+  }
+
+  .user-cta {
+    display: flex;
+    gap: 12px;
+
+    .trash-btn {
+      text-decoration: underline;
+
+      &:hover {
+        color: hsl(var(--danger));
+      }
+    }
+
+    .active-fav {
+      i {
+        color: hsl(var(--base));
+      }
+    }
+  }
+}
+
+
+.show-cart-box {
+  right: 0;
+}
+
+
+// body overlay
+.sidebar-overlay {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.87);
+  z-index: 9999;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.2s linear;
+
+  &.show {
+    visibility: visible;
+    opacity: 0.5;
+  }
+}
+
+
+.note--box {
+  position: absolute;
+  padding: 20px;
+  background-color: hsl(var(--white));
+  width: 100%;
+  z-index: 9;
+  transition: all 0.4s ease-in-out;
+  box-shadow: 0 0 10px #82828233;
+  left: 0px;
+  bottom: -20px;
+  opacity: 0;
+  visibility: hidden;
+
+  .cancel--btn{
+    text-decoration: underline;
+  }
+
+  textarea{
+    height: 100px;
+  }
+
+}
+
+.coupon--box{
+  position: absolute;
+  left: 0px;
+  bottom: -20px;
+  padding: 20px;
+  background-color: hsl(var(--white));
+  width: 100%;
+  z-index: 9;
+  transition: all 0.4s ease-in-out;
+  box-shadow: 0 0 10px #82828233;
+  opacity: 0;
+  visibility: hidden;
+
+  .cancel--btn{
+    text-decoration: underline;
+  }
+
+  textarea{
+    height: 100px;
+  }
+
+}
+
+.show-note--box{
+  bottom: 0px !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+}

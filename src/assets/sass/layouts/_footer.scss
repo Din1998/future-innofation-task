@@ -1,0 +1,253 @@
+.footer-area {
+    position: relative;
+
+    .footer-top{
+        background-color: hsl(var(--footer-bg));
+    }
+
+}
+
+.footer-item {
+    .latest-blog__title a {
+        color: hsl(var(--black));
+    }
+
+    .latest-blog {
+        padding-bottom: 15px;
+        margin-bottom: 15px;
+        border-bottom: 1px solid hsl(var(--black)/0.1);
+    }
+
+    span.latest-blog__date {
+        color: hsl(var(--black));
+    }
+
+    &--desc {
+        color: hsl(var(--black));
+        margin-bottom: 36px;
+        width: 100%;
+    }
+
+    &--logo {
+        margin-bottom: 20px;
+
+        a {
+            img {
+                width: 100%;
+                height: 100%;
+                max-width: 180px;
+                filter: brightness(1);
+            }
+        }
+    }
+
+    &--title {
+        color: hsl(var(--base));
+        position: relative;
+        font-size: 22px;
+        font-weight: 700;
+        margin-bottom: 27px;
+        
+
+    }
+
+    .social-list {
+        margin-top: 10px;
+        display: flex;
+        gap: 12px;
+
+        @include md-screen {
+            margin-top: 20px;
+        }
+
+        @include msm-screen {
+            margin-top: 15px;
+        }
+    }
+
+    .social-list--item .social-list__link {
+        font-size: 20px;
+        border: 0px;
+        color: hsl(var(--base));
+
+        &:hover {
+            color: hsl(var(--white)) !important;
+        }
+    }
+}
+
+// social icon
+.icon-wrapper {
+    .icon {
+        background: hsl(var(--base));
+        transition: 0.2s linear;
+        i{
+            color: hsl(var(--white));
+            transition: 0.2s linear;
+            font-size: 16px;
+        }
+
+        &:hover {
+            background: hsl(var(--white));
+            transition: 0.2s linear;
+            i{
+                color: hsl(var(--base));
+                transition: 0.2s linear;
+            }
+        }
+    }
+
+    div {
+        width: 34px;
+        height: 34px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+// Footer List Item
+.menu {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin: -5px 0;
+
+    &--item {
+        display: block;
+        padding: 8px 0;
+
+        &:hover{
+            a{
+
+                color: hsl(var(--black)) !important;
+            }
+        }
+    }
+
+    &--link {
+        position: relative;
+        color: hsl(var(--black));
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+
+        i {
+            font-size: 12px;
+            color: hsl(var(--base));
+        }
+
+        &:hover {
+            color: hsl(var(--black));
+            margin-left: 4px;
+        }
+    }
+}
+
+// Footer Contact
+.footer-contact-menu {
+    margin: -6px 0;
+
+    &__item {
+        display: flex;
+        padding: 1px 0;
+
+        p {
+            color: hsl(var(--black));
+        }
+
+        &-icon {
+            width: 15px;
+            color: hsl(var(--black));
+            font-size: 15px;
+        }
+
+        &-content {
+            width: calc(100% - 15px);
+            padding-left: 15px;
+        }
+    }
+}
+
+
+
+
+
+
+.bottom-footer {
+    position: relative;
+    border-top: 1px solid hsl(var(--black)/0.1);
+    .bottom-footer-text {
+        color: hsl(var(--black));
+        @include md-screen {
+            text-align: center;
+        }
+        @include xsm-screen {
+            font-size: 14px;
+        }
+    }
+}
+
+
+
+
+
+
+// news latter 
+.subscribe-box {
+    position: relative;
+
+    form {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        position: relative;
+    }
+
+    input {
+        background-color: hsl(var(--black));
+        outline: none;
+        padding-right: 128px;
+        color: hsl(var(--black)) !important;
+
+        &::placeholder {
+            color: hsl(var(--black)) !important;
+        }
+
+        &:focus {
+            border: 1px solid hsl(var(--black)/.3);
+        }
+    }
+
+    .sub-btn {
+        position: absolute;
+        right: 6px;
+        padding: 8px 16px;
+
+        i {
+            color: hsl(var(--black));
+        }
+    }
+}
+
+
+// footer contact info
+.footer-contact-info {
+    p {
+        color: hsl(var(--black)/0.8);
+        width: 100%;
+        a {
+            color: hsl(var(--black)/0.8);
+        }
+    }
+
+    i {
+        font-size: 20px;
+        color: hsl(var(--black));
+    }
+}
+
+.footer-logo-dark{
+    display: none;
+}

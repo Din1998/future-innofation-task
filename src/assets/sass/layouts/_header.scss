@@ -1,0 +1,252 @@
+.header {
+    position: relative;
+    z-index: 5;
+    padding: 0px;
+    background: hsl(var(--white));
+    width: 100%;
+    box-shadow: 0px 4px 20px 2px rgba(16, 30, 87, 0.07);
+    @include md-screen {
+        top: 0px;
+        padding: 12px 0px;
+        position: relative;
+        left: 0;
+        right: 0;
+        z-index: 7;
+        max-height: 101vh;
+        overflow-y: auto;
+
+        &::-webkit-scrollbar {
+            width: 5px;
+            height: 5px;
+        }
+
+        &::-webkit-scrollbar-thumb {
+            border-radius: 0px;
+        }
+    }
+
+    @include msm-screen {
+        padding: 12px 0px;
+    }
+
+    &.fixed-header {
+        background-color: hsl(var(--body-color));
+        position: fixed;
+        top: 0px;
+        animation: slide-down 0.8s;
+        width: 100%;
+        box-shadow: 0px 4px 20px 2px rgba(16, 30, 87, 0.07);
+        z-index: 9;
+
+        .header-wrapper .main-menu li a {
+            color: hsl(var(--black));
+        }
+
+        .language-box .select {
+            color: hsl(var(--black));
+        }
+
+        .language-box i {
+            color: hsl(var(--black));
+        }
+    }
+
+}
+
+.header-main-area {
+    .container-fluid {
+        padding: 0 52px;
+
+        @include xl-screen {
+            padding: 0 10px;
+        }
+
+        @include md-screen {
+            padding: 0 36px;
+        }
+
+        @include msm-screen {
+            padding: 0 25px;
+        }
+    }
+}
+
+
+
+.scrolled {
+    display: none !important;
+}
+
+
+.header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 0px;
+
+    @include md-screen {
+        padding: 0px 0;
+    }
+
+    .ham__menu {
+        color: hsl(var(--black));
+        display: none;
+
+        @include md-screen {
+            display: block !important;
+        }
+    }
+
+    .logo-wrapper {
+        img {
+            max-width: 180px;
+            @include md-screen {
+                width: 112px;
+            }
+            @include xsm-screen {
+                width: 112px;
+            }
+        }
+    }
+
+    .header-menu-wrapper{
+        @include md-screen {
+            display: none !important;
+        }
+    }
+
+
+
+    .main-menu {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 40px;
+
+   
+        @include lg-screen {
+            margin-left: 0px;
+        }
+
+        li {
+            transition: all .4s;
+        }
+
+        a {
+            font-size: 16px;
+            color: hsl(var(--black)/.7);
+            font-weight: 600;
+            position: relative;
+            text-transform: uppercase;
+
+
+            &:hover{
+                color: hsl(var(--black));
+            }
+            &.active {
+                color: hsl(var(--black));
+                font-weight: 700;
+            }
+
+            @include xl-screen {
+                font-size: 14px;
+            }
+
+            @include lg-screen {
+                padding: 0px;
+                font-size: 14px;
+            }
+        }
+    }
+
+
+    @media (max-width: 620px) {
+
+        .menu-list-wrapper {
+
+            ul:last-child {
+                display: none;
+            }
+        }
+    }
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+.header.fixed-header {
+    .header-wrapper .main-menu a {
+
+        &:hover {
+            color: hsl(var(--base));
+        }
+
+        &.active {
+            color: hsl(var(--base));
+        }
+    }
+
+    .light-dark-btn-wrap .mon-icon {
+        color: hsl(var(--black));
+    }
+
+    .menu-search-wrap .menu-search-wrap--search-icon i {
+        font-size: 17px;
+        color: hsl(var(--black));
+    }
+}
+
+
+
+
+
+
+
+
+
+// header login button
+
+
+.login--btn {
+    background-color: hsl(var(--base));
+    padding: 15px 26px;
+    border-radius: 177px;
+    &:hover {
+        background-color: hsl(var(--base-d-200));
+
+    }
+}
+
+
+
+
+.header-menu-wrapper {
+    gap: 32px;
+}
+
+.menu-list-wrapper {
+    gap: 32px;
+
+
+}
+
+
+.search-toggle--btn {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    display: none;
+}
+
+.search-form--active {
+    display: block !important;
+}

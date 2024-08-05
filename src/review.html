@@ -1,0 +1,842 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title -->
+    <title>Frontend Developer Task || Future innovation</title>
+   <!-- Favicon -->
+   <link rel="shortcut icon" href="assets/images/logo/fav.png">
+   <!-- Apple touch icon -->
+   <link rel="apple-touch-icon" href="assets/images/logo/fav.png">
+    <!-- line awesome -->
+    <link rel="stylesheet" href="assets/css/line-awesome.min.css">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
+    <!-- Slick -->
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <!-- Animate css -->
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <!-- Odometer -->
+    <link rel="stylesheet" href="assets/css/odometer.css">
+    <!-- splitting -->
+    <link rel="stylesheet" href="assets/css/splitting.css">
+
+    <!-- magnific-popup -->
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+
+    <link rel="stylesheet" href="assets/css/datepicker.min.css">
+
+
+
+
+    <!-- Main css -->
+    <link rel="stylesheet" href="assets/css/main.css">
+
+</head>
+
+<body>
+
+    <!--==================== Preloader Start ====================-->
+    <div id="loading">
+        <div id="loading-center">
+            <div id="loading-center-absolute">
+                <span class="loader"></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="sidebar-overlay"></div>
+
+    <!--==================== Preloader End ====================-->
+<!-- header -->
+<!-- Header Start -->
+
+<div class="header-main-area">
+  <div class="header" id="header">
+    <div class="container position-relative">
+      <div class="header-wrapper">
+        <!-- ham menu -->
+        <i class="fa-sharp fa-solid fa-bars-staggered ham__menu" data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasExample" aria-controls="offcanvasExample"></i>
+
+        <!-- logo -->
+          <div class="logo-wrapper">
+            <a href="index.html" class="normal-logo" id="normal-logo"> <img src="assets/images/logo/logo.png"
+                alt="...">
+            </a>
+          </div>
+        <!-- / logo -->
+
+        <!-- menu list -->
+        <div class="header-menu-wrapper align-items-center d-flex">
+          <div class="menu-list-wrapper d-flex align-items-center position-relative">
+            <ul class="main-menu">
+              <li>
+                <a class="active menu-item" href="index.html">Home</a>
+              </li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Rooms</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Page</a></li>
+            </ul>
+          </div>
+        </div>
+        <!-- / menu list -->
+
+
+
+        <ul class="login-lng d-flex align-items-center gap--24">
+          <li><a href="#" class="fw--600 fs--16">Login/Signup</a></li>
+          <li>
+            <a class="login--btn fs--14 fw--700 text--white" href="#">Reservation</a>
+          </li>
+        </ul>
+
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Header section End -->
+
+<!-- Sidebar mobile menu wrap Start-->
+<div class="offcanvas offcanvas-start text-bg-light" tabindex="-1" id="offcanvasExample">
+  <div class="offcanvas-header">
+    <div class="logo">
+      <div class="align-items-center d-flex">
+        <div class="logo-wrapper">
+          <a href="index.html" class="normal-logo" id="offcanvas-logo-normal">
+            <img src="assets/images/logo/logo.png" alt="">
+          </a>
+        </div>
+      </div>
+    </div>
+    <button type="button" class="btn-close btn-close-black" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <div class="user-info">
+      <div class="user-thumb">
+        <a href="userDashboard.html">
+          <img src="assets/images/user/user3.png" alt="user-thumb">
+        </a>
+      </div>
+      <a href="userDashboard.html">
+        <h4>Anonymous</h4>
+      </a>
+    </div>
+    <ul class="side-Nav">
+      <li>
+        <a class="active" href="index.html">
+          Home
+        </a>
+      </li>
+      <li>
+        <a href="browse.html">
+          Browse
+        </a>
+      </li>
+      <li>
+        <a href="blog.html">
+          Blog
+        </a>
+      </li>
+      <li>
+        <a href="contact.html">
+          Contact
+        </a>
+      </li>
+      <li>
+        <a href="login.html">
+          Login
+        </a>
+      </li>
+      <li>
+        <a class="cart--btn" href="#">
+          All Cart
+        </a>
+      </li>
+      <li>
+        <a href="login.html" class="login-btn">Signup</a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+
+
+
+
+
+
+<!-- Sidebar mobile menu wrap End -->
+
+
+
+<!-- product details section -->
+<!-- < product details  -->
+<section class="product-details py-80">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8">
+
+                <div class="item--wrap mb-4">
+
+                    <div class="d-flex justify-content-between align-items-center flex-wrap gap--12 pb-3">
+                        <ul class="product--menu d-flex flex-wrap gap--68">
+                            <li><a href="details.html" class="item--link ">Description</a></li>
+                            <li><a href="review.html" class="item--link active">Reviews <span
+                                        class="badge badge--base">05</span></a>
+                            </li>
+                            <li><a href="comment.html" class="item--link">Comments <span
+                                        class="badge badge--base">58</span></a>
+                            </li>
+                        </ul>
+
+                        <div class="d-flex gap--16 justify-content-between align-items-center">
+                            <button class="share--btn"><i class="fa-solid fa-share-nodes"></i></button>
+                            <ul class="star--wrap d-flex">
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star-half-stroke"></i></li>
+                                <li class="ms-2">
+                                    <p class="text--black">(50k)</p>
+
+                                </li>
+                            </ul>
+                            <p class="total--sell text--black">Sale 874</p>
+                        </div>
+                    </div>
+                    <span class="btm--bar1"></span>
+                </div>
+
+                <div class="product--thumb base--radius overflow-hidden mb-4">
+                    <img class="fit--img" src="assets/images/common/product1.png" alt="...">
+                </div>
+
+                <div class="d-flex justify-content-between flex-wrap gap--20 mb-5">
+                    <div class="btn--wrap d-flex flex-wrap gap--28">
+                        <button class="btn btn--base-two btn--md">Live Preview</button>
+                        <button class="btn btn-outline--base btn--md">Live Preview</button>
+                    </div>
+                    <div class="price--wrap">
+                        <h6 class="price fs--32 fw--700">$78</h6>
+                    </div>
+                </div>
+
+
+
+                <div class="key description mb-5">
+                    <div class="title--wrap mb-4">
+                        <h1 class="title fs--20 fw--700">All Review</h1>
+                        <span class="btm--bar"></span>
+                    </div>
+
+                    <div class="review-card--wrap d-flex flex-column gap--24">
+                        <div class="review--card d-flex flex-column justify-content-start gap--16">
+                            <div class="user-meta--wrap d-flex justify-content-start align-items-center gap--20">
+                                <div class="thumb--wrap radius--50 overflow-hidden">
+                                    <img class="fit--img" src="assets/images/user/user2.png" alt="...">
+                                </div>
+                                <div class="content--wrap">
+                                    <h6 class="name mb-0 fs--20 fw--500">Rianne Russell</h6>
+                                    <p>England, United Kingdom</p>
+                                </div>
+                            </div>
+
+                            <div class="review--date">
+                                <ul class="star--wrap d-flex">
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star-half-stroke"></i></li>
+                                    <li class="ms-2">
+                                        <p class="text--black">18 December 2023</p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="description--wrap">
+                                <p>This ring is more beautiful in person. My favorite ring by far now. Customer service
+                                    is the best I’ve had so far. Came very quickly considering they made it after I
+                                    ordered it Will definitely </p>
+                            </div>
+                        </div>
+
+                        <div class="review--card d-flex flex-column justify-content-start gap--16">
+                            <div class="user-meta--wrap d-flex justify-content-start align-items-center gap--20">
+                                <div class="thumb--wrap radius--50 overflow-hidden">
+                                    <img class="fit--img" src="assets/images/user/user3.png" alt="...">
+                                </div>
+                                <div class="content--wrap">
+                                    <h6 class="name mb-0 fs--20 fw--500">Rianne Russell</h6>
+                                    <p>England, United Kingdom</p>
+                                </div>
+                            </div>
+
+                            <div class="review--date">
+                                <ul class="star--wrap d-flex">
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star-half-stroke"></i></li>
+                                    <li class="ms-2">
+                                        <p class="text--black">18 December 2023</p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="description--wrap">
+                                <p>This ring is more beautiful in person. My favorite ring by far now. Customer service
+                                    is the best I’ve had so far. Came very quickly considering they made it after I
+                                    ordered it Will definitely </p>
+                            </div>
+                        </div>
+
+                        <div class="review--card d-flex flex-column justify-content-start gap--16">
+                            <div class="user-meta--wrap d-flex justify-content-start align-items-center gap--20">
+                                <div class="thumb--wrap radius--50 overflow-hidden">
+                                    <img class="fit--img" src="assets/images/user/user1.png" alt="...">
+                                </div>
+                                <div class="content--wrap">
+                                    <h6 class="name mb-0 fs--20 fw--500">Rianne Russell</h6>
+                                    <p>England, United Kingdom</p>
+                                </div>
+                            </div>
+
+                            <div class="review--date">
+                                <ul class="star--wrap d-flex">
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star-half-stroke"></i></li>
+                                    <li class="ms-2">
+                                        <p class="text--black">18 December 2023</p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="description--wrap">
+                                <p>This ring is more beautiful in person. My favorite ring by far now. Customer service
+                                    is the best I’ve had so far. Came very quickly considering they made it after I
+                                    ordered it Will definitely </p>
+                            </div>
+                        </div>
+
+                        <div class="review--card d-flex flex-column justify-content-start gap--16">
+                            <div class="user-meta--wrap d-flex justify-content-start align-items-center gap--20">
+                                <div class="thumb--wrap radius--50 overflow-hidden">
+                                    <img class="fit--img" src="assets/images/user/user4.png" alt="...">
+                                </div>
+                                <div class="content--wrap">
+                                    <h6 class="name mb-0 fs--20 fw--500">Rianne Russell</h6>
+                                    <p>England, United Kingdom</p>
+                                </div>
+                            </div>
+
+                            <div class="review--date">
+                                <ul class="star--wrap d-flex">
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star-half-stroke"></i></li>
+                                    <li class="ms-2">
+                                        <p class="text--black">18 December 2023</p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="description--wrap">
+                                <p>This ring is more beautiful in person. My favorite ring by far now. Customer service
+                                    is the best I’ve had so far. Came very quickly considering they made it after I
+                                    ordered it Will definitely </p>
+                            </div>
+                        </div>
+
+                        <div class="review--card d-flex flex-column justify-content-start gap--16">
+                            <div class="user-meta--wrap d-flex justify-content-start align-items-center gap--20">
+                                <div class="thumb--wrap radius--50 overflow-hidden">
+                                    <img class="fit--img" src="assets/images/user/user1.png" alt="...">
+                                </div>
+                                <div class="content--wrap">
+                                    <h6 class="name mb-0 fs--20 fw--500">Rianne Russell</h6>
+                                    <p>England, United Kingdom</p>
+                                </div>
+                            </div>
+
+                            <div class="review--date">
+                                <ul class="star--wrap d-flex">
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star-half-stroke"></i></li>
+                                    <li class="ms-2">
+                                        <p class="text--black">18 December 2023</p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="description--wrap">
+                                <p>This ring is more beautiful in person. My favorite ring by far now. Customer service
+                                    is the best I’ve had so far. Came very quickly considering they made it after I
+                                    ordered it Will definitely </p>
+                            </div>
+                        </div>
+
+                        <div class="review--card d-flex flex-column justify-content-start gap--16">
+                            <div class="user-meta--wrap d-flex justify-content-start align-items-center gap--20">
+                                <div class="thumb--wrap radius--50 overflow-hidden">
+                                    <img class="fit--img" src="assets/images/user/user6.png" alt="...">
+                                </div>
+                                <div class="content--wrap">
+                                    <h6 class="name mb-0 fs--20 fw--500">Rianne Russell</h6>
+                                    <p>England, United Kingdom</p>
+                                </div>
+                            </div>
+
+                            <div class="review--date">
+                                <ul class="star--wrap d-flex">
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star-half-stroke"></i></li>
+                                    <li class="ms-2">
+                                        <p class="text--black">18 December 2023</p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="description--wrap">
+                                <p>This ring is more beautiful in person. My favorite ring by far now. Customer service
+                                    is the best I’ve had so far. Came very quickly considering they made it after I
+                                    ordered it Will definitely </p>
+                            </div>
+                        </div>
+
+                        <div class="review--card d-flex flex-column justify-content-start gap--16">
+                            <div class="user-meta--wrap d-flex justify-content-start align-items-center gap--20">
+                                <div class="thumb--wrap radius--50 overflow-hidden">
+                                    <img class="fit--img" src="assets/images/user/user8.png" alt="...">
+                                </div>
+                                <div class="content--wrap">
+                                    <h6 class="name mb-0 fs--20 fw--500">Rianne Russell</h6>
+                                    <p>England, United Kingdom</p>
+                                </div>
+                            </div>
+
+                            <div class="review--date">
+                                <ul class="star--wrap d-flex">
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star-half-stroke"></i></li>
+                                    <li class="ms-2">
+                                        <p class="text--black">18 December 2023</p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="description--wrap">
+                                <p>This ring is more beautiful in person. My favorite ring by far now. Customer service
+                                    is the best I’ve had so far. Came very quickly considering they made it after I
+                                    ordered it Will definitely </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <div class="col-lg-4">
+
+                <div class="details-wrap p-4 base--radius bg--white mb-4">
+                    <div class="input--group d-flex flex-nowrap position-relative">
+                        <input type="text" name="search" class="form--control border--solid1 radius--12" value=""
+                            placeholder="Search" id="search">
+                        <button class="search-btn">
+                            <i class="las la-search"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="details-wrap p-4 base--radius bg--white mb-4 d-flex flex-column gap--28">
+                    <div class="price--wrap d-flex justify-content-between align-items-center">
+                        <h6 class="title mb-0">Regular</h6>
+                        <h6 class="price fs--32 fw--600 mb-0" id="mainPrice">$78</h6>
+                    </div>
+                    <ul class="d-flex flex-column">
+                        <li class="d-flex justify-content-start align-items-center gap--8">
+                            <i class="fa-solid fa-check"></i>
+                            <p>Quality checked by CodePin</p>
+                        </li>
+                        <li class="d-flex justify-content-start align-items-center gap--8">
+                            <i class="fa-solid fa-check"></i>
+                            <p>Feature updates</p>
+                        </li>
+                        <li class="d-flex justify-content-start align-items-center gap--8">
+                            <i class="fa-solid fa-check"></i>
+                            <p>6 month support from BoxLab
+                        <li class="d-flex justify-content-start align-items-center gap--8 mb-2">
+                            <i class="fa-solid fa-check"></i>
+                            <p>Quality checked by CodePen</p>
+                        </li>
+
+                        <li class="d-flex justify-content-start align-items-center">
+                            <div class="form--check mb-2">
+                                <input class="form-check-input extend-licence--input" value="15" type="checkbox"
+                                    name="flexRadioDefault" id="flexRadioDefault20">
+                                <label class="form-check-label" for="flexRadioDefault20">
+                                    Extend support to 12 months <span class="fs--18 fw--700">$15</span>
+                                </label>
+                            </div>
+                        </li>
+                    </ul>
+                    <a href="user.html" class="btn btn--base-two btn--lg"><i class="fa-brands fa-opencart"></i> Buy Now</a>
+                </div>
+
+
+                <div class="details-wrap p-4 base--radius bg--white mb-4 d-flex flex-column gap--24">
+                    <div class="auth-profile--wrap d-flex gap--12">
+                        <div class="thumb--wrap">
+                            <img class="fit--img" src="assets/images/user/user1.png" alt="...">
+                        </div>
+                        <div class="auth--meta">
+                            <h6 class="name fw--700 fs-20 mb-0">BoxLab</h6>
+                            <p class="membership--date">Member since August 2018</p>
+                        </div>
+                    </div>
+
+                    <ul class="auth--badge d-flex align-items-center justify-content-center gap--8 flex-wrap">
+                        <li>
+                            <div class="thumb--wrap">
+                                <img src="assets/images/user/userbadge1.png" alt="...">
+                            </div>
+                        </li>
+                        <li>
+                            <div class="thumb--wrap">
+                                <img src="assets/images/user/userbadge2.png" alt="...">
+                            </div>
+                        </li>
+                        <li>
+                            <div class="thumb--wrap">
+                                <img src="assets/images/user/userbadge3.png" alt="...">
+                            </div>
+                        </li>
+                        <li>
+                            <div class="thumb--wrap">
+                                <img src="assets/images/user/userbadge4.png" alt="...">
+                            </div>
+                        </li>
+                        <li>
+                            <div class="thumb--wrap">
+                                <img src="assets/images/user/userbadge5.png" alt="...">
+                            </div>
+                        </li>
+                        <li>
+                            <div class="thumb--wrap">
+                                <img src="assets/images/user/userbadge6.png" alt="...">
+                            </div>
+                        </li>
+                        <li>
+                            <div class="thumb--wrap">
+                                <img src="assets/images/user/userbadge7.png" alt="...">
+                            </div>
+                        </li>
+                        <li>
+                            <div class="thumb--wrap">
+                                <img src="assets/images/user/userbadge8.png" alt="...">
+                            </div>
+                        </li>
+                    </ul>
+
+                    <div class="btn--wrap">
+                        <a href="#" class="btn btn--base-two btn--lg w--100">View Profile</a>
+                    </div>
+                </div>
+
+
+                <div class="details-wrap p-4 base--radius bg--white">
+                    <div class="title--wrap mb-4">
+                        <h6 class="title fs--20 fw--600">Product Details</h6>
+                        <span class="btm--bar"></span>
+                    </div>
+
+
+                    <ul class="d-flex flex-column gap--24">
+                        <li class="d-flex justify-content-between align-items-center gap--20">
+                            <p class="text--black fw--400">Last Update</p>
+                            <p class="fw--400">23 May 2024</p>
+                        </li>
+                        <li class="d-flex justify-content-between align-items-center gap--20">
+                            <p class="text--black fw--400">Published</p>
+                            <p class="fw--400">23 May 2024</p>
+                        </li>
+                        <li class="d-flex justify-content-between align-items-center gap--20">
+                            <p class="text--black fw--400">Gutenberg</p>
+                            <p class="fw--400">No</p>
+                        </li>
+                        <li class="d-flex justify-content-between align-items-center gap--20">
+                            <p class="text--black fw--400">Optimized</p>
+                            <p class="fw--400">No</p>
+                        </li>
+                        <li class="d-flex justify-content-between align-items-center gap--20">
+                            <p class="text--black fw--400">High Resolution</p>
+                            <p class="fw--400">Yes</p>
+                        </li>
+                        <li class="d-flex justify-content-between align-items-center gap--20">
+                            <p class="text--black fw--400">Widget Ready</p>
+                            <p class="fw--400">Yes</p>
+                        </li>
+                        <li class="d-flex justify-content-between align-items-center gap--20">
+                            <p class="text--black fw--400">Browsers</p>
+                            <p class="fw--400">Chrome,Mozilla,Opera</p>
+                        </li>
+                        <li class="d-flex justify-content-between align-items-center gap--20">
+                            <p class="text--black fw--400">Columns</p>
+                            <p class="fw--400">12</p>
+                        </li>
+                        <li class="d-flex justify-content-between align-items-center gap--20">
+                            <p class="text--black fw--400">Documentation</p>
+                            <p class="fw--400">Well Documented</p>
+                        </li>
+                        <li class="d-flex justify-content-between align-items-center gap--20">
+                            <p class="text--black fw--400">Layout</p>
+                            <p class="fw--400">Responsive</p>
+                        </li>
+                        <li
+                            class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center gap--20 py-2">
+                            <p class="text--black fw--400">Tags</p>
+                            <p class="fw--400 w--50 text-left">adsense theme,affiliate
+                                marketing,digital,dokan</p>
+                        </li>
+                    </ul>
+
+
+
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="modal fade modal-lg" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+
+                <!-- <div class="modal-header">
+                    <h5 class="modal-title">Course Preview</h5>
+                    <div class="modal-btn-wrap">
+                        <button data-bs-dismiss="modal" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+                    </div>
+                </div> -->
+
+                <div class="modal-body coustom-modal-body">
+
+                    <!-- <h1 class="title">The Ultimate Guide to the best WordPress LMS Plugin</h1> -->
+
+                    <video id="player" playsinline controls data-poster="assets/images/common/login4.png">
+                        <source src="assets/images/common/video1.mp4" type="video/mp4" />
+                        <track kind="captions" label="English captions" src="/path/to/captions.vtt" srclang="en"
+                            default />
+                    </video>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</section>
+<!-- product details  /> -->
+
+
+
+<!-- blog section -->
+<!-- Footer Start Here -->
+<footer class="footer-area overflow--hidden">
+
+
+    <div class="footer-top py-100">
+        <div class="container">
+            <div class="row gy-4 justify-content-center py-3">
+                <div class="col-xl-3 col-sm-6">
+                    <div class="footer-item">
+                        <div class="footer-item--logo">
+                            <a href="index.html" class="footer-logo-normal">
+                                <img src="assets/images/logo/logo.png" alt="">
+                            </a>
+                        </div>
+
+                        <p class="fs--22 fw--500 text--black mb-3">Follow us on social media</p>
+                        <ul class="social-list z--9 position-relative">
+                            <li class="social-list--item"><a href="https://www.facebook.com"
+                                    class="social-list__link icon-wrapper">
+                                    <div class="icon"><i class="fab fa-facebook-f"></i></div>
+                                </a> </li>
+                            <li class="social-list--item"><a href="https://www.linkedin.com"
+                                    class="social-list__link icon-wrapper">
+                                    <div class="icon"><i class="fab fa-linkedin-in"></i></div>
+                                </a></li>
+                            <li class="social-list--item"><a href="https://www.twitter.com"
+                                    class="social-list__link icon-wrapper active">
+                                    <div class="icon"><i class="fa-brands fa-x-twitter"></i></div>
+                                </a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-sm-6">
+                    <div class="footer-item">
+                        <h5 class="footer-item--title text--black">Quick Links</h5>
+                        <ul class="footer-menu ms-xl-4">
+                            <li class="menu--item"><a href="#" class="menu--link">Abut us </a></li>
+                            <li class="menu--item"><a href="#" class="menu--link">Our Service</a></li>
+                            <li class="menu--item"><a href="#" class="menu--link">Our Blog’s</a></li>
+                            <li class="menu--item">
+                                <a href="#" class="menu--link">
+                                    Contact
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-sm-6">
+                    <div class="footer-item">
+                        <h5 class="footer-item--title text--black">Appointment</h5>
+                        <ul class="footer-menu ms-xl-4">
+                            <li class="menu--item"><a href="#" class="menu--link">Web Design and development</a></li>
+                            <li class="menu--item"><a href="#" class="menu--link">UI UX Service</a></li>
+                            <li class="menu--item"><a href="#" class="menu--link">Digital marketing</a></li>
+                            <li class="menu--item">
+                                <a href="#" class="menu--link">
+                                    Custom Web Design
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-sm-6">
+                    <div class="footer-item">
+                        
+                        <h5 class="footer-item--title text--black">Contact Us</h5>
+                        <div class="footer-contact-info mb-3 d-flex justify-content-start gap-3">
+                            <div class="d-flex align-items-center flex-wrap gap-2">
+                                <i class="fa-regular fa-envelope"></i>
+                            </div>
+                            <div class="d-flex justify-content-start flex-column align-items-center">
+                                <p class="fw--400 text--black">Call Us</p>
+                                <p><a class="text--black" href="mailto:hunkcyAgencyUI@gamil.com">hunkcyAgencyUI@gamil.com</a> </p>
+                            </div>
+                        </div>
+                        <div class="footer-contact-info mb-3 d-flex justify-content-start gap-3">
+                            <div class="d-flex align-items-center flex-wrap gap-2">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <div class="d-flex justify-content-start flex-column align-items-center">
+                                <p class="fw--400 text--black">Address</p>
+                                <p class="text--black">302/1, Hazi Tower, Gandaria New Rd, Dhaka 1204</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+
+    </div>
+
+    <!-- bottom Footer -->
+    <div class="bottom-footer pt-4 pb-3 bg--dark">
+        <div class="container">
+            <div class="row text-center gy-2">
+                <div class="col-lg-12 d-flex justify-content-between align-items-center">
+                    <div class="bottom-footer-text text--white"> &copy; 2024 Bookky | All Rights Reserved</div>
+                    <div class="bottom-footer-text">
+                        <ul class="d-flex gap--36 align-items-center">
+                            <li><a class="text--white" href="#">Trems of service</a></li>
+                            <li><a class="text--white" href="#">privacy policy</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- / bottom Footer-->
+
+
+</footer>
+
+<!-- / Footer End Here -->
+
+
+
+
+<div class="scroll-top show">
+    <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+        <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"
+            style="transition: stroke-dashoffset 10ms linear 0s; stroke-dasharray: 307.919, 307.919; stroke-dashoffset: 197.514;">
+        </path>
+    </svg>
+</div>
+
+<!-- footer -->
+
+<!-- footer -->
+<!-- Jquery js -->
+<script src="assets/js/jquery-3.7.1.min.js"></script>
+<!-- Bootstrap Js -->
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+<!-- Slick js -->
+<script src="assets/js/slick.min.js"></script>
+<!-- Odometer js -->
+<script src="assets/js/odometer.min.js"></script>
+<!-- Appear -->
+<script src="assets/js/jquery.appear.min.js"></script>
+<!-- wow js -->
+<script src="assets/js/wow.min.js"></script>
+<!-- splitting js -->
+<script src="assets/js/splitting.min.js"></script>
+
+<script src="assets/js/datepicker.min.js"></script>
+
+
+<!-- magnific-popup -->
+<script src="assets/js/jquery.magnific-popup.min.js"></script>
+
+
+
+
+<!-- main js -->
+<script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

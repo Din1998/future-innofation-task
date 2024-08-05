@@ -1,0 +1,397 @@
+<section class="all-cart--list py-100">
+    <div class="container">
+
+        <div class="row border-bottom--solid1 d-none d-md-flex">
+            <div class="col-lg-6 col-md-6">
+                <h6>Product</h6>
+            </div>
+            <div class="col-lg-2 col-md-2">
+                <h6>Price</h6>
+            </div>
+            <div class="col-lg-2 col-md-2">
+                <h6>Quantity</h6>
+            </div>
+            <div class="col-lg-2 col-md-2">
+                <h6>Total</h6>
+            </div>
+        </div>
+
+        <div class="row mb-5">
+            <div class="col-lg-12">
+                <div class="product-list border-bottom--solid1">
+                    <div class="row gy-3 align-items-center">
+                        <div class="col-lg-6 col-md-6">
+                            <div class="content--wrap d-flex align-items-baseline gap--20">
+                                <div class="thumb--wrap">
+                                    <img src="assets/images/product/img1.png" alt="...">
+                                </div>
+                                <div class="title--wrap">
+                                    <h6 class="fw--400">
+                                        Gree 1 Ton Inverter AC (Pular-Split Type GS-12XPUV32)</h6>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-2 col-md-2 d-none d-md-block">
+                            <div class="price--wrap flex-shrink-0">
+                                <h6 class="price fw--400">$3333</h6>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-2 col-md-2 d-flex justify-content-lg-center justify-content-end">
+
+                            <div class="quantity_box border--base d-flex justify-content-center align-items-center">
+                                <button type="button" class="sub"><i class="fa fa-minus"></i></button>
+                                <input class="count-input" type="number" id="quantityInput" value="1" readonly="">
+                                <button type="button" class="add"><i class="fa fa-plus"></i></button>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-2 col-md-2 d-flex justify-content-lg-center justify-content-end">
+                            <div class="total-price--wrap flex-shrink-0">
+                                <h6 class="price fs--20 fw--400">$3333</h6>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <div class="row justify-content-end">
+            <div class="col-lg-4 col-md-8">
+                <div class="cart--footer2 d-flex flex-column gap--20 justify-content-center align-items-center w--100 position-relative">
+                    <div
+                        class="d-flex justify-content-between align-items-center w--100 mb-3 border-bottom--solid2 pb-2">
+                        <button
+                            class="d-flex flex-column align-items-center justify-content-center w--50 note--btn border-right--solid2"><i
+                                class="fa-solid fa-pencil"></i> Note</button>
+                        <button
+                            class="d-flex flex-column align-items-center justify-content-center w--50 coupon--btn"><i
+                                class="fa-solid fa-ticket"></i> Coupon</button>
+                    </div>
+
+                    <div class="d-flex justify-content-between align-items-center w--100">
+                        <h6 class="mb-0">Subtotal:</h6>
+                        <h6 class="mb-0">$12345678</h6>
+                    </div>
+
+                    <div class="d-flex flex-column justify-content-center align-items-center gap--12 w--100">
+                        <button class="btn btn--base w-100 btn--lg w--100" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">
+                            Proceed To Checkout (19)</button>
+                        <a href="all-cart.html" class="text-decoration-underline">View Cart</a>
+                    </div>
+
+
+
+
+
+
+
+
+                    <div class="note--box">
+                        <h6 class="title"><i class="fa-solid fa-pencil me-1"></i> Add note for seller</h6>
+                        <form class="mb-2">
+                            <textarea class="form--control mb-2"></textarea>
+                            <button class="btn btn--base btn--lg w--100">Save</button>
+                        </form>
+                        <div class="d-flex justify-content-center align-items-center">
+                            <button class="cancel--btn text-center">Cancel</button>
+                        </div>
+                    </div>
+
+                    <div class="coupon--box">
+                        <h6 class="title"><i class="fa-solid fa-ticket me-1"></i> Add a discount code</h6>
+                        <form class="mb-2">
+                            <textarea class="form--control mb-2"></textarea>
+                            <button class="btn btn--base btn--lg w--100">Save</button>
+                        </form>
+                        <div class="d-flex justify-content-center align-items-center">
+                            <button class="cancel--btn text-center">Cancel</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+
+
+    </div>
+</section>
+
+
+
+
+<!-- modal wrap -->
+<div class="modal modal--base fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h6 class="title fs--24 fw--600">Enter your information</h6>
+                <button type="button" class="btn--close" data-bs-dismiss="modal" aria-label="Close"><i
+                        class="fa-solid fa-xmark"></i></button>
+            </div>
+            <div class="modal-body">
+                <div class="row justify-content-center gy-4">
+                    <div class="col-lg-12">
+                        <form>
+                            <!-- user info -->
+
+                            <div class="input--wrap mb-3 d-flex justify-content-between align-items-center">
+                                <h6 class="mb-0">Name</h6>
+                                <div class="input-group  w--80">
+                                    <span class="input-group-text" id="basic-addon1"><i
+                                            class="fa-solid fa-user"></i></span>
+                                    <input type="text" class="form-control form--control border-left--none"
+                                        placeholder="Name" required>
+                                </div>
+                            </div>
+
+                            <div class="input--wrap mb-3 d-flex justify-content-between align-items-center">
+                                <h6 class="mb-0">Phone</h6>
+                                <div class="input-group w--80">
+                                    <span class="input-group-text" id="basic-addon1"><i
+                                            class="fa-solid fa-phone"></i></span>
+                                    <input type="number" class="form-control form--control border-left--none"
+                                        placeholder="+880 000 00 00 000" required>
+                                </div>
+                            </div>
+
+                            <div class="input--wrap mb-5 d-flex justify-content-between align-items-center">
+                                <h6 class="mb-0">Address</h6>
+                                <div class="input-group w--80">
+                                    <span class="input-group-text" id="basic-addon1"><i
+                                            class="fa-solid fa-location-dot"></i></span>
+                                    <input type="text" class="form-control form--control border-left--none" required>
+                                </div>
+                            </div>
+
+                            <!-- user info -->
+
+
+
+                            <!-- shipping methods -->
+                            <div class="mb-5">
+                                <h6>Shipping Method</h6>
+                                <ul class="list-group">
+                                    <li class="list-group-item">
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <div class="form--radio">
+                                                <input class="form-radio-input filter-by-category" name="categories"
+                                                    type="radio" value="1" id="5">
+                                                <label class="form-check-label" for="5">
+                                                    Inside Dhaka
+                                                </label>
+                                            </div>
+                                            <div class="price">
+                                                <p class="fs--18 fw--700">$22222</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <div class="form--radio">
+                                                <input class="form-radio-input filter-by-category" name="categories"
+                                                    type="radio" value="1" id="6">
+                                                <label class="form-check-label" for="6">
+                                                    Outside Dhaka
+                                                </label>
+                                            </div>
+                                            <div class="price">
+                                                <p class="fs--18 fw--700">$22222</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- shipping methods -->
+
+
+                            <!-- apply coupon -->
+                            <div class="coupon d-flex flex-column justify-content-start align-items-start mb-5 w--100">
+                                <h6 class="">Apply Coupon</h6>
+                                <div class="w--100 d-flex justify-content-between">
+                                    <input type="text" class="form--control w--80" placeholder="Coupon Code" required>
+                                    <button class="btn btn--base ">Apply</button>
+                                </div>
+                            </div>
+                            <!-- apply coupon -->
+
+                            <!-- cart product list -->
+                            <div class="product-list--wrap d-flex flex-column gap--16 mb-5">
+                                <div
+                                    class="order-product--card d-flex justify-content-between align-items-center gap--16">
+                                    <div class="thumb--wrap position-relative flex-shrink-0">
+                                        <img class="fit--img" src="assets/images/product/img1.png" alt="...">
+                                        <div
+                                            class="count position-absolute d-flex justify-content-center align-items-center">
+                                            <p class="text--white fw--600 text--sm">99</p>
+                                        </div>
+                                    </div>
+                                    <div class="content--wrap">
+                                        <div class="title">
+                                            <h6 class="fs--14 mb-0">Gree 1 Ton Inverter AC (Pular-Split Type
+                                                GS-12XPUV32)</h6>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <button class="fs--24"><i class="fa-solid fa-xmark"></i></button>
+                                    </div>
+                                </div>
+                                <div
+                                    class="order-product--card d-flex justify-content-between align-items-center gap--16">
+                                    <div class="thumb--wrap position-relative flex-shrink-0">
+                                        <img class="fit--img" src="assets/images/product/img1.png" alt="...">
+                                        <div
+                                            class="count position-absolute d-flex justify-content-center align-items-center">
+                                            <p class="text--white fw--600 text--sm">99</p>
+                                        </div>
+                                    </div>
+                                    <div class="content--wrap">
+                                        <div class="title">
+                                            <h6 class="fs--14 mb-0">Gree 1 Ton Inverter AC (Pular-Split Type
+                                                GS-12XPUV32)</h6>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <button class="fs--24"><i class="fa-solid fa-xmark"></i></button>
+                                    </div>
+                                </div>
+                                <div
+                                    class="order-product--card d-flex justify-content-between align-items-center gap--16">
+                                    <div class="thumb--wrap position-relative flex-shrink-0">
+                                        <img class="fit--img" src="assets/images/product/img1.png" alt="...">
+                                        <div
+                                            class="count position-absolute d-flex justify-content-center align-items-center">
+                                            <p class="text--white fw--600 text--sm">99</p>
+                                        </div>
+                                    </div>
+                                    <div class="content--wrap">
+                                        <div class="title">
+                                            <h6 class="fs--14 mb-0">Gree 1 Ton Inverter AC (Pular-Split Type
+                                                GS-12XPUV32)</h6>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <button class="fs--24"><i class="fa-solid fa-xmark"></i></button>
+                                    </div>
+                                </div>
+                                <div
+                                    class="order-product--card d-flex justify-content-between align-items-center gap--16">
+                                    <div class="thumb--wrap position-relative flex-shrink-0">
+                                        <img class="fit--img" src="assets/images/product/img1.png" alt="...">
+                                        <div
+                                            class="count position-absolute d-flex justify-content-center align-items-center">
+                                            <p class="text--white fw--600 text--sm">99</p>
+                                        </div>
+                                    </div>
+                                    <div class="content--wrap">
+                                        <div class="title">
+                                            <h6 class="fs--14 mb-0">Gree 1 Ton Inverter AC (Pular-Split Type
+                                                GS-12XPUV32)</h6>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <button class="fs--24"><i class="fa-solid fa-xmark"></i></button>
+                                    </div>
+                                </div>
+                                <div
+                                    class="order-product--card d-flex justify-content-between align-items-center gap--16">
+                                    <div class="thumb--wrap position-relative flex-shrink-0">
+                                        <img class="fit--img" src="assets/images/product/img1.png" alt="...">
+                                        <div
+                                            class="count position-absolute d-flex justify-content-center align-items-center">
+                                            <p class="text--white fw--600 text--sm">99</p>
+                                        </div>
+                                    </div>
+                                    <div class="content--wrap">
+                                        <div class="title">
+                                            <h6 class="fs--14 mb-0">Gree 1 Ton Inverter AC (Pular-Split Type
+                                                GS-12XPUV32)</h6>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <button class="fs--24"><i class="fa-solid fa-xmark"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- cart product list -->
+
+                            <!-- Note -->
+                            <div class="note d-flex flex-column justify-content-start align-items-start mb-5 w--100">
+                                <h6 class="">Order Note</h6>
+                                <div class="w--100 d-flex justify-content-between">
+                                    <input type="text" class="form--control w--100" placeholder="Coupon Code" required>
+                                </div>
+                            </div>
+                            <!-- Note -->
+
+
+
+
+
+
+                            <!-- total price -->
+                            <div class="mb-5">
+                                <h6>Price</h6>
+                                <ul class="list-group">
+                                    <li class="list-group-item">
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <div class="text">
+                                                <p class="text--black">Subtotal</p>
+                                            </div>
+                                            <div class="price">
+                                                <p class="fs--18 fw--700 text--black">$22222</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <div class="text">
+                                                <p class="text--black">Delivery</p>
+                                            </div>
+                                            <div class="price">
+                                                <p class="fs--18 fw--700 text--black">$22222</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <div class="text">
+                                                <p class="text--black">Total</p>
+                                            </div>
+                                            <div class="price">
+                                                <p class="fs--18 fw--700 text--black">$22222</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- total price -->
+
+
+
+
+                            <div class="d-flex justify-content-center mb-5">
+                                <button type="submit" class="btn btn--base btn--lg mt-3 text-center w-100">Click to
+                                    confirm your order</button>
+                            </div>
+
+                            <div class="warnint--text">
+                                <h6 class="text--warning text-center fw--700">By clicking on the button above, your
+                                    order will be confirmed immediately!</h6>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!-- modal wrap -->
