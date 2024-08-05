@@ -24,9 +24,7 @@
   border: 1px solid hsl(var(--black)/.5);
 }
 .form--label {
-  color: hsl(var(--black));
-  margin-bottom: 8px;
-  font-weight: 600;
+  font-family: var(--heading-font);
 }
 
 

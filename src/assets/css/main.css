@@ -2778,9 +2778,7 @@ button:focus {
 }
 
 .form--label {
-    color: hsl(var(--black));
-    margin-bottom: 8px;
-    font-weight: 600;
+    font-family: var(--heading-font);
 }
 
 .form--control {
@@ -4082,7 +4080,7 @@ button.mfp-close {
     content: "";
     position: absolute;
     top: 0px;
-    right: 5%;
+    right: 7%;
     width: 1px;
     height: 100%;
     border: 1px dashed hsl(var(--black)/0.1);
@@ -4121,6 +4119,11 @@ button.mfp-close {
 
 .footer-area .footer-top {
     background-color: hsl(var(--footer-bg));
+}
+
+.footer-area .footer--bg {
+    top: 10%;
+    left: 0px;
 }
 
 .footer-item .latest-blog__title a {
